@@ -1,0 +1,52 @@
+
+
+
+
+<div class="content-fluid" style="padding-left: 250px; ">
+
+<p></p>
+<h1>Punto de ventas</h1> 
+
+<div id='controles'>
+
+<br><br>
+
+<label>Producto</label><br>
+<select name="productos" id="productos">
+<option value="3">Sopa de Coditos</option>
+<option value="26">Detergente 1Kg</option>
+<option value="13">Azucar 1kg</option>
+<option value="26">Aceite de cocina </option>
+</select><br>
+<label>Cantidad</label><br>
+<input type="number" name="canti" id="canti"><br>
+<label>Total x producto</label><br>
+<input type="number" name="totalx" id="totalx"  disabled ><br><br>
+<button onclick='calcular();' class="btn btn-primary">Calcular</button>
+<button onclick='agregar();' class="btn btn-primary">Agregar</button>
+<button onclick='nueva();'class="btn btn-primary ">Nueva</button><br><br>
+
+<div class="container">
+  <table class="table table-bordered" id="tablaP" name="tablaP">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Costos</th>
+        <th>Cantidad</th>
+        <th>Total x producto</th>
+      </tr>
+    </thead>
+    <tbody id="contenido_tabla">
+      
+    </tbody>
+  </table>
+    
+
+  <br><br>
+ <label>Total a pagar:</label><br>
+<input type="text" name="tot" id="tot" disabled ><br>
+</div>
+
+
+</div>
+</div>
